@@ -13,77 +13,75 @@
 </head>
 
 <body>
-  <h2 class='title'>~ GUESS THAT CITY ~</h2>
-  <h4 class='title'>Can you name the following cities based off one square mile of their street networks? Hover over each image to reveal the answer.</h4>
+  <h1 class='title'>~ GUESS THAT CITY ~</h1>
+  <h4 class='title'>Can you name the following cities based off one square mile of their street networks? <br/> Enter your response below each image and then press 'SUBMIT' when you're ready.</h4>
 
   <div id='container 1'>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/atlanta.jpg'/>
-        <div class="overlay">
-           <h3>ATLANTA</h3>
+      <img width="200" height="200" class='img-responsive' src='img/atlanta.jpg'/>
+        <div class="response">
+          <input type="text" id="atlanta" size="20">
         </div>
     </div>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/boston.jpg'/>
-        <div class="overlay">
-           <h3>BOSTON</h3>
+      <img width="200" height="200" class='img-responsive' src='img/boston.jpg'/>
+        <div class="response">
+          <input type="text" id="boston" size="20">
         </div>
     </div>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/dubai.jpg'/>
-        <div class="overlay">
-           <h3>DUBAI</h3>
+      <img width="200" height="200" class='img-responsive' src='img/dubai.jpg'/>
+        <div class="response">
+          <input type="text" id="dubai" size="20">
         </div>
     </div>
   </div>
 
   <div id="container 2">
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/irvine.jpg'/>
-        <div class="overlay">
-           <h3>IRVINE</h3>
+      <img width="200" height="200" class='img-responsive' src='img/irvine.jpg'/>
+        <div class="response">
+          <input type="text" id="irvine" size="20">
         </div>
     </div>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/new-york.jpg'/>
-        <div class="overlay">
-           <h3>NEW YORK CITY</h3>
+      <img width="200" height="200" class='img-responsive' src='img/new-york.jpg'/>
+        <div class="response">
+          <input type="text" id="nyc" size="20">
         </div>
     </div>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/osaka.jpg'/>
-        <div class="overlay">
-           <h3>OSAKA</h3>
+      <img width="200" height="200" class='img-responsive' src='img/osaka.jpg'/>
+        <div class="response">
+          <input type="text" id="osaka" size="20">
         </div>
     </div>
   </div>
 
   <div id="container 3">
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/paris.jpg'/>
-        <div class="overlay">
-           <h3>PARIS</h3>
+      <img width="200" height="200" class='img-responsive' src='img/paris.jpg'/>
+        <div class="response">
+          <input type="text" id="paris" size="20">
         </div>
     </div>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/rome.jpg'/>
-        <div class="overlay">
-           <h3>ROME</h3>
+      <img width="200" height="200" class='img-responsive' src='img/rome.jpg'/>
+        <div class="response">
+          <input type="text" id="rome" size="20">
         </div>
     </div>
     <div class='cover'>
-      <img width="150" height="150" class='img-responsive' src='img/san-francisco.jpg'/>
-        <div class="overlay">
-           <h3>SAN FRANCISCO</h3>
+      <img width="200" height="200" class='img-responsive' src='img/san-francisco.jpg'/>
+        <div class="response">
+          <input type="text" id="sf" size="20">
         </div>
     </div>
   </div>
 
-  <h4>How many did you get correct? <input type="text" id="in" size="4"></h4>
+  <button id="b">SUBMIT</button>
 
-  <button id="b">How did I do?</button>
-
-  <h4 class='outcome text'>Outcome: <span id="write"></span></h4>
+  <h4 class='outcome text'>Your Score: <span id="write"></span></h4>
 
   <p>The street network images—in the style of Nolli maps—are based off those hand-drawn by Allan Jacobs in his classic book on street-level urban form and design, <a href="https://mitpress.mit.edu/books/great-streets">Great Steets</a>. Geoff Boeing, urban planning and spatial analysis professor at USC, developed Python code using the OSMnx package to recreate these maps for any city in the world. You can find the code to reproduce the diagrams in his <a href="https://github.com/gboeing/osmnx">GitHub Repository</a>.</p>
 
