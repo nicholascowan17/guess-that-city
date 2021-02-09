@@ -42,3 +42,28 @@ function showOverlays() {
   if (($('#sf').val().toLowerCase().trim() == 'sf') || ($('#sf').val().toLowerCase().trim() == 'san francisco')){$('#overlay9a')[0].style.visibility = 'visible';}
     else {$('#overlay9b')[0].style.visibility = 'visible';}
 }
+
+var theSecondButton = document.getElementById("b2");
+theSecondButton.onclick = showAnswers;
+
+function showAnswers() {
+  $('#overlay1a')[0].style.visibility = 'hidden';
+  $('#overlay1b')[0].style.visibility = 'hidden';
+  $('#overlay2a')[0].style.visibility = 'hidden';
+  $('#overlay2b')[0].style.visibility = 'hidden';
+  $('#overlay3a')[0].style.visibility = 'hidden';
+  $('#overlay3b')[0].style.visibility = 'hidden';
+  $('#overlay4a')[0].style.visibility = 'hidden';
+  $('#overlay4b')[0].style.visibility = 'hidden';
+  $('#overlay5a')[0].style.visibility = 'hidden';
+  $('#overlay5b')[0].style.visibility = 'hidden';
+  $('#overlay6a')[0].style.visibility = 'hidden';
+  $('#overlay6b')[0].style.visibility = 'hidden';
+  $('#overlay7a')[0].style.visibility = 'hidden';
+  $('#overlay7b')[0].style.visibility = 'hidden';
+  $('#overlay8a')[0].style.visibility = 'hidden';
+  $('#overlay8b')[0].style.visibility = 'hidden';
+  $('#overlay9a')[0].style.visibility = 'hidden';
+  $('#overlay9b')[0].style.visibility = 'hidden';
+  $('.answer').show();
+}
