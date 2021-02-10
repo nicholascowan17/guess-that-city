@@ -23,47 +23,31 @@ function showResults() {
 }
 
 function showOverlays() {
-  if ($('#atlanta').val().toLowerCase().trim() == 'atlanta'){$('#overlay1a')[0].style.visibility = 'visible';}
-    else {$('#overlay1b')[0].style.visibility = 'visible';}
-  if ($('#boston').val().toLowerCase().trim() == 'boston'){$('#overlay2a')[0].style.visibility = 'visible';}
-    else {$('#overlay2b')[0].style.visibility = 'visible';}
-  if ($('#dubai').val().toLowerCase().trim() == 'dubai'){$('#overlay3a')[0].style.visibility = 'visible';}
-    else {$('#overlay3b')[0].style.visibility = 'visible';}
-  if ($('#irvine').val().toLowerCase().trim() == 'irvine'){$('#overlay4a')[0].style.visibility = 'visible';}
-    else {$('#overlay4b')[0].style.visibility = 'visible';}
-  if (($('#nyc').val().toLowerCase().trim() == 'nyc') || ($('#nyc').val().toLowerCase().trim() == 'new york city') || ($('#nyc').val().toLowerCase().trim() == 'new york')){$('#overlay5a')[0].style.visibility = 'visible';}
-    else {$('#overlay5b')[0].style.visibility = 'visible';}
-  if ($('#osaka').val().toLowerCase().trim() == 'osaka'){$('#overlay6a')[0].style.visibility = 'visible';}
-    else {$('#overlay6b')[0].style.visibility = 'visible';}
-  if ($('#paris').val().toLowerCase().trim() == 'paris'){$('#overlay7a')[0].style.visibility = 'visible';}
-    else {$('#overlay7b')[0].style.visibility = 'visible';}
-  if ($('#rome').val().toLowerCase().trim() == 'rome'){$('#overlay8a')[0].style.visibility = 'visible';}
-    else {$('#overlay8b')[0].style.visibility = 'visible';}
-  if (($('#sf').val().toLowerCase().trim() == 'sf') || ($('#sf').val().toLowerCase().trim() == 'san francisco')){$('#overlay9a')[0].style.visibility = 'visible';}
-    else {$('#overlay9b')[0].style.visibility = 'visible';}
+  if ($('#atlanta').val().toLowerCase().match(/atlanta/g) == 'atlanta'){$('#overlay1a').show();}
+    else {$('#overlay1b').show();}
+  if ($('#boston').val().toLowerCase().match(/boston/g) == 'boston'){$('#overlay2a').show();}
+    else {$('#overlay2b').show();}
+  if ($('#dubai').val().toLowerCase().match(/dubai/g) == 'dubai'){$('#overlay3a').show();}
+    else {$('#overlay3b').show();}
+  if ($('#irvine').val().toLowerCase().match(/irvine/g) == 'irvine'){$('#overlay4a').show();}
+    else {$('#overlay4b').show();}
+  if (($('#nyc').val().toLowerCase().match(/nyc/g) == 'nyc') || ($('#nyc').val().toLowerCase().match(/new york city/g) == 'new york city') || ($('#nyc').val().toLowerCase().match(/new york/g) == 'new york')){$('#overlay5a').show();}
+    else {$('#overlay5b').show();}
+  if ($('#osaka').val().toLowerCase().match(/osaka/g) == 'osaka'){$('#overlay6a').show();}
+    else {$('#overlay6b').show();}
+  if ($('#paris').val().toLowerCase().match(/paris/g) == 'paris'){$('#overlay7a').show();}
+    else {$('#overlay7b').show();}
+  if ($('#rome').val().toLowerCase().match(/rome/g) == 'rome'){$('#overlay8a').show();}
+    else {$('#overlay8b').show();}
+  if (($('#sf').val().toLowerCase().match(/sf/g) == 'sf') || ($('#sf').val().toLowerCase().match(/san francisco/g) == 'san francisco')){$('#overlay9a').show();}
+    else {$('#overlay9b').show();}
 }
 
 var theSecondButton = document.getElementById("b2");
 theSecondButton.onclick = showAnswers;
 
 function showAnswers() {
-  $('#overlay1a')[0].style.visibility = 'hidden';
-  $('#overlay1b')[0].style.visibility = 'hidden';
-  $('#overlay2a')[0].style.visibility = 'hidden';
-  $('#overlay2b')[0].style.visibility = 'hidden';
-  $('#overlay3a')[0].style.visibility = 'hidden';
-  $('#overlay3b')[0].style.visibility = 'hidden';
-  $('#overlay4a')[0].style.visibility = 'hidden';
-  $('#overlay4b')[0].style.visibility = 'hidden';
-  $('#overlay5a')[0].style.visibility = 'hidden';
-  $('#overlay5b')[0].style.visibility = 'hidden';
-  $('#overlay6a')[0].style.visibility = 'hidden';
-  $('#overlay6b')[0].style.visibility = 'hidden';
-  $('#overlay7a')[0].style.visibility = 'hidden';
-  $('#overlay7b')[0].style.visibility = 'hidden';
-  $('#overlay8a')[0].style.visibility = 'hidden';
-  $('#overlay8b')[0].style.visibility = 'hidden';
-  $('#overlay9a')[0].style.visibility = 'hidden';
-  $('#overlay9b')[0].style.visibility = 'hidden';
+  $('.overlaya').hide();
+  $('.overlayb').hide();
   $('.answer').show();
 }

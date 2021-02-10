@@ -65,8 +65,8 @@ img {
   background-color: #fff;
 }
 
-#overlay1a, #overlay2a, #overlay3a, #overlay4a, #overlay5a, #overlay6a, #overlay7a, #overlay8a, #overlay9a {
-  visibility: hidden;
+.overlaya, #overlay1a, #overlay2a, #overlay3a, #overlay4a, #overlay5a, #overlay6a, #overlay7a, #overlay8a, #overlay9a {
+  display: none;
   opacity: 0.9;
   margin: 15px;
   position: absolute;
@@ -75,8 +75,8 @@ img {
   background-color: #76E16B;
 }
 
-#overlay1b, #overlay2b, #overlay3b, #overlay4b, #overlay5b, #overlay6b, #overlay7b, #overlay8b, #overlay9b {
-  visibility: hidden;
+.overlayb, #overlay1b, #overlay2b, #overlay3b, #overlay4b, #overlay5b, #overlay6b, #overlay7b, #overlay8b, #overlay9b {
+  display: none;
   opacity: 0.9;
   margin: 15px;
   position: absolute;
